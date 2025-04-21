@@ -1,0 +1,13 @@
+base: !include ../base.yaml
+model: !include ../model/single_muscle.yaml
+training: !include ../train/default.yaml
+
+# data
+train_subjects: ['231121_A', '231128_A', '231128_B', '231129_A', '231205_A', '231205_B', '231213_A', '231218_A', '231219_A']
+test_subjects: ['231121_A', '231128_A', '231128_B', '231129_A', '231205_A', '231205_B', '231213_A', '231218_A', '231219_A']
+train_tasks: ['Carrying']
+test_tasks: ['Carrying']
+
+muscles: ['ES', 'UT', 'BB', 'FD', 'ED']
+weights: ['5kg', '10kg']
+use_delta: True

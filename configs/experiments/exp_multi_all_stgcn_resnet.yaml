@@ -1,0 +1,17 @@
+base: !include ../base.yaml
+model: !include ../model/multi_muscle_stgcn_multimodal.yaml
+training: !include ../train/default.yaml
+
+# data
+train_subjects: ['231128_A', '231128_B', '231129_A', '231205_A', '231205_B', '231213_A', '231218_A', '231219_A'] # ['231121_A', '231128_A', '231128_B', '231129_A', '231205_A', '231205_B', '231213_A', '231218_A', '231219_A']
+test_subjects: ['231121_A']
+train_tasks: ['Picking', 'PuttingDown', 'Carrying', 'Lifting', 'Lowering']
+test_tasks: ['Picking', 'PuttingDown', 'Carrying', 'Lifting', 'Lowering']
+train_weights: ['5kg', '10kg']
+test_weights: ['5kg', '10kg']
+
+muscles: ['ES', 'UT', 'BB', 'FD', 'ED']
+weights: ['5kg', '10kg']
+use_delta: True
+use_img: True
+tag: 'LOSO'

@@ -1,0 +1,11 @@
+# General
+project_name: 2025_P2M
+root_dir: /home/tako/mesrwi/subject_folder
+subjects: ['231121_A', '231128_A', '231128_B', '231129_A', '231205_A', '231205_B', '231213_A', '231218_A', '231219_A']
+tasks: ['Picking', 'PuttingDown', 'Carrying', 'Lifting', 'Lowering']
+weights: ['5kg', '10kg']
+clip_len: 80
+num_joints: 17
+dim_joints: 3
+
+seed: 42

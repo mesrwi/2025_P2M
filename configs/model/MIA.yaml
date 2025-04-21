@@ -1,0 +1,8 @@
+model: P2M
+dim_feat: 126
+temporal_range: 9
+use_cond: False
+dim_cond: 2
+dim_model: 128
+num_heads: 16
+num_layers: 8

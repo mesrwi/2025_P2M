@@ -1,0 +1,6 @@
+model: P2MTransformer
+temporal_range: 9
+dim_feat: 512
+dim_model: 512
+num_heads: 16
+num_layers: 8
